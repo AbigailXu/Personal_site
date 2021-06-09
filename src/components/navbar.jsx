@@ -1,11 +1,7 @@
 import React, { Component, Fragment } from "react";
-import { Link } from "react-router-dom";
 import {
   Navbar,
   Nav,
-  NavItem,
-  NavDropdown,
-  MenuItem,
   Container,
 } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

@@ -1,0 +1,31 @@
+.navbar-container{
+    background-color: transparent !important;
+    z-index: 2;
+    margin: 1rem 2rem !important;
+    top: 2vh;
+    position: fixed;
+}
+.basic-navbar-nav:active{
+    border-style: none !important;
+}
+.nav-icon {
+    color: #EBE4DA;
+  }
+
+.list-group{
+    max-width: 15vw;
+}
+.list-group-item{
+    background-color: transparent !important;
+    color: #EBE4DA !important;
+    border-style: none !important;
+    max-width: 15vw;
+    text-align: left !important;
+}
+
+@media (max-width: 450){
+    .list-group-item{
+        max-width: 40vw;
+    }
+
+}

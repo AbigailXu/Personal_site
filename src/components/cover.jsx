@@ -38,21 +38,32 @@ const Cover = () => {
                 <strong>Full-stack Web Development</strong>
               </h5>
               <div className="social-media-group">
-              <FontAwesomeIcon
+                <FontAwesomeIcon
                   className="social-media-icon"
                   icon={["fas", "envelope-square"]}
+                  onClick={() =>
+                    window.open("mailto:x389xu@uwaterloo.ca")
+                  }
                 />
                 <FontAwesomeIcon
                   className="social-media-icon"
-                  icon={["fas", "phone-volume"]}
+                  icon={["fab", "github-square"]}
+                  onClick={() => window.open("https://github.com/AbigailXu")}
                 />
                 <FontAwesomeIcon
                   className="social-media-icon"
                   icon={["fab", "linkedin"]}
+                  onClick={() =>
+                    window.open("https://www.linkedin.com/in/xianglei-xu/")
+                  }
                 />
                 <FontAwesomeIcon
                   className="social-media-icon"
                   icon={["fab", "instagram-square"]}
+                  onClick={() =>
+                    window.open("https://www.instagram.com/abigail_ouo/")
+                  }
+                  // onclick="location.href='https://www.instagram.com/abigail_ouo/';"
                 />
               </div>
             </div>

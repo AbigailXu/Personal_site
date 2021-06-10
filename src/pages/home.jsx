@@ -1,76 +1,32 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment, Component} from "react";
 import "../styles/home-pg1.css";
 
-import portrait1 from "../images/portrait1.jpg";
-import NavBar from "../components/navbar.jsx";
+// import Page2 from "../components/page2.jsx";
+import Cover from "../components/cover.jsx";
 
 
-const Home = () => {
-  const [offset, setOffset, coverSlide] = useState(0);
 
-  useEffect(() => {
-    window.onscroll = () => {
-      setOffset(window.pageYOffset);
-      coverSlide(setOffset>0 ? setOffset : 0);
-    };
-  }, []);
+class Home extends Component {
+    state = {  }
 
-//   const trackScrolling = () => {
-//     const wrappedElement = document.getElementById('header');
-//     if (this.isBottom(wrappedElement)) {
-//       console.log('header bottom reached');
-//       document.removeEventListener('scroll', this.trackScrolling);
-//     }
-//   };
+    // componentDidMount() {
+    //     window.addEventListener('scroll', (e)=>console.log(e.target.scrollHeight), true);
+    //  }
 
-  console.log(window.pageYOffset);
+    // handleScroll = (e) => {
+    //     console.log(0)
+    //     const bottom = e.target.scrollHeight - e.target.scrollTop === e.target.clientHeight;
+    //     if (bottom) {
+    //         console.log("bottom")
+    //         this.render(<Page2/>)
+    //     }
+    //   }
 
-  return (
-    <Fragment>
-      {/* <h1 className="animate__animated animate__slideOutLeft">
-        An animated element
-      </h1> */}
-      <NavBar />
-      <div className="home-pg1">
-        <div className="home-pg1-anime">
-          <div
-            className="home-pg1-left"
-            style={{
-              transform: "translate(-" + coverSlide * 1 + "vw,0",
-              opacity: 100 - offset + "%",
-            }}
-          >
-            <div className="home-pg1-text">
-              <h1>ABIGAIL XU</h1>
-              <h5>2nd year CS student @ The University of Waterloo</h5>
-              <h5>Engaging in:</h5>
-              <h5><strong>Full-stack Web Development</strong></h5>
-            </div>
-          </div>
-            <div
-              className="home-pg1-portrait"
-              style={{
-                transform: "translate(" + coverSlide * 1.5 + "vw,0",
-                opacity: 100 - offset + "%",
-              }}
-            >
-              <img
-                className="home-pg1-portrait-img"
-                src={portrait1}
-                alt="portrait"
-              />
-            </div>
-            <div
-              className="home-pg1-right"
-              style={{
-                transform: "translate(" + coverSlide * 1.5 + "vw,0",
-                opacity: 100 - offset + "%",
-              }}
-            ></div>
-        </div>
-      </div>
-    </Fragment>
-  );
-};
+    render() { 
+        return ( <Fragment>
+            <Cover/>
+        </Fragment>);
+    }
+}
 
 export default Home;

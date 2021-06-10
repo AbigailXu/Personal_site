@@ -1,32 +1,52 @@
-import React, { Fragment, Component} from "react";
-import "../styles/home-pg1.css";
+import React, { useRef, useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// import Page2 from "../components/page2.jsx";
+import "../styles/home-pg1.css";
+import "../styles/page2.css";
+
+import Page2 from "../components/page2.jsx";
 import Cover from "../components/cover.jsx";
 
+const Home = () => {
+    gsap.registerPlugin(ScrollTrigger);
 
+    const ref = useRef(null);
 
-class Home extends Component {
-    state = {  }
+    useEffect(() => {
+        const element = ref.current;
+        console.log(ref)
+        console.log(element.querySelector(".page2-container"));
+        gsap.fromTo(
+          element.querySelector(".page2-container"),
+          {
+            opacity: 0,
+            y: 0,
+          },
+          {
+            opacity:1,
+            y: -400,
+            scrollTrigger: {
+                trigger: element.querySelector(".page2-container"),
+                start: "top bottom-=5px",
+                end: "top bottom-=30px",
+                scrub: true,
+                markers: true,
 
-    // componentDidMount() {
-    //     window.addEventListener('scroll', (e)=>console.log(e.target.scrollHeight), true);
-    //  }
+              }
+          }
+        );
+        
+      }, []);
 
-    // handleScroll = (e) => {
-    //     console.log(0)
-    //     const bottom = e.target.scrollHeight - e.target.scrollTop === e.target.clientHeight;
-    //     if (bottom) {
-    //         console.log("bottom")
-    //         this.render(<Page2/>)
-    //     }
-    //   }
-
-    render() { 
-        return ( <Fragment>
-            <Cover/>
-        </Fragment>);
-    }
+    return (
+      <div ref={ref}>
+        <Cover /> 
+        <div className="page2-container" ><Page2/></div>
+        
+      </div>
+    );
+//   }
 }
 
 export default Home;

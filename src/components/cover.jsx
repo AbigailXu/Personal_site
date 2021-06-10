@@ -32,7 +32,7 @@ const Cover = () => {
                 opacity: 100 - offset*1.5 + "%",
               }}
             >
-              <div className="home-pg1-text">
+              <div className="home-pg1-text-1">
                 <h1>ABIGAIL XU</h1>
                 <h5>2nd year CS student @ The University of Waterloo</h5>
                 <h5>Engaging in:</h5>
@@ -58,7 +58,11 @@ const Cover = () => {
                   transform: "translate(" + offset * 1.5 + "vw,0",
                   opacity: 100 - offset*1.5 + "%",
                 }}
-              ></div>
+              >
+                <div className="home-pg1-text-2">
+                <h1>AX</h1>
+              </div>
+              </div>
           </div>
         </div>
       </Fragment>

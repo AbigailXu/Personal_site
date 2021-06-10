@@ -31,7 +31,7 @@ const Home = () => {
                 start: "top bottom-=5px",
                 end: "top bottom-=30px",
                 scrub: true,
-                markers: true,
+                // markers: true,
 
               }
           }

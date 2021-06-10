@@ -14,13 +14,13 @@ const Home = () => {
     };
   }, []);
 
-  const trackScrolling = () => {
-    const wrappedElement = document.getElementById('header');
-    if (this.isBottom(wrappedElement)) {
-      console.log('header bottom reached');
-      document.removeEventListener('scroll', this.trackScrolling);
-    }
-  };
+//   const trackScrolling = () => {
+//     const wrappedElement = document.getElementById('header');
+//     if (this.isBottom(wrappedElement)) {
+//       console.log('header bottom reached');
+//       document.removeEventListener('scroll', this.trackScrolling);
+//     }
+//   };
 
   console.log(window.pageYOffset);
 

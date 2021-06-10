@@ -1,6 +1,6 @@
 .home-pg1 {
-    position: absolute;
-    top: 0;
+  position: absolute;
+  top: 0;
 }
 
 .home-pg1-left {
@@ -11,14 +11,14 @@
 }
 
 .home-pg1-portrait {
-  width: 70vw;
+  max-width: 70vw;
   display: flex;
   position: absolute;
   flex: 0 0 150px;
   justify-content: center;
   overflow: hidden;
   z-index: 2;
-  left: 30%;
+  left: 48%;
   top: 20vh;
   align-items: flex-start;
 }
@@ -26,58 +26,77 @@
 .home-pg1-portrait-img {
   max-width: 35vw;
   border-radius: 50%;
-  border-width: 25px;
-  border-color: #EBE4DA;
+  border-width: 20px;
+  border-color: #ebe4da;
   border-style: solid;
 }
 
 .home-pg1-right {
   height: 110vh;
   width: 35vw;
-  background-color: #EBE4DA;
+  background-color: #ebe4da;
   z-index: 1;
   float: right;
 }
-.home-pg1-text-1{
-    margin-top: 40vh;
-    margin-right: 35%;
-    color: #EBE4DA;
-    text-align: right;
+.home-pg1-text-1 {
+  margin-top: 40vh;
+  margin-right: 35%;
+  color: #ebe4da;
+  text-align: right;
 }
-.home-pg1-text-2{
-    margin-top: 37vh;
-    margin-left: 20vw;
-    color: #292725;
-    text-align: left;
+.home-pg1-text-2 {
+  margin-top: 37vh;
+  margin-left: 20vw;
+  color: #292725;
+  text-align: left;
 }
 /* font-family: 'Raleway', sans-serif; */
 
-.home-pg1-text-1, .home-pg1-text-2  > h1{
-    font-family: 'Raleway', sans-serif, 700;
+.home-pg1-text-1,
+.home-pg1-text-2 > h1 {
+  font-family: "Raleway", sans-serif, 700;
 }
 
-.home-pg1-text-2  > h1{
-    font-size: 6rem;
-    text-decoration-line: underline;
-    text-decoration-style: double;
-    text-underline-offset: 0.5rem;
-    text-decoration-thickness: 0.3rem;
+.home-pg1-text-2 > h1 {
+  opacity: 0.8;
+  font-size: 6rem;
+  text-decoration-line: underline;
+  text-decoration-style: double;
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 0.3rem;
 }
 
-.home-pg1-text-1, .home-pg1-text-2  > h5{
-    font-family: 'Raleway', sans-serif;
+.home-pg1-text-1,
+.home-pg1-text-2 > h5 {
+  opacity: 0.8;
+  font-family: "Raleway", sans-serif;
+}
+.social-media-icon {
+  z-index: 3;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.social-media-icon:hover {
+  cursor: pointer;
+  opacity: 0.9;
 }
 
-@media screen and (max-width: 800px){
-    .home-pg1-portrait-img {
-        border-width: 10px;
-      }
+@media screen and (max-width: 800px) {
+  .home-pg1-portrait-img {
+    border-width: 10px;
+  }
 
-    .home-pg1-text-2  > h1{
-        font-size: 3rem;
-    }
-    .home-pg1-text-2{
-        margin-top: 27vh;
-        margin-left: 20vw;
-    }
+  .home-pg1-text-2 > h1 {
+    font-size: 3rem;
+  }
+  .home-pg1-text-2 {
+    margin-top: 27vh;
+    margin-left: 20vw;
+  }
+  .social-media-icon {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
 }

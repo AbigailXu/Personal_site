@@ -6,11 +6,12 @@ import NavBar from "../components/navbar.jsx";
 
 
 const Home = () => {
-  const [offset, setOffset] = useState(0);
+  const [offset, setOffset, coverSlide] = useState(0);
 
   useEffect(() => {
     window.onscroll = () => {
       setOffset(window.pageYOffset);
+      coverSlide(setOffset>0 ? setOffset : 0);
     };
   }, []);
 
@@ -35,7 +36,7 @@ const Home = () => {
           <div
             className="home-pg1-left"
             style={{
-              transform: "translate(-" + offset * 1 + "vw,0",
+              transform: "translate(-" + coverSlide * 1 + "vw,0",
               opacity: 100 - offset + "%",
             }}
           >
@@ -49,7 +50,7 @@ const Home = () => {
             <div
               className="home-pg1-portrait"
               style={{
-                transform: "translate(" + offset * 1.5 + "vw,0",
+                transform: "translate(" + coverSlide * 1.5 + "vw,0",
                 opacity: 100 - offset + "%",
               }}
             >
@@ -62,7 +63,7 @@ const Home = () => {
             <div
               className="home-pg1-right"
               style={{
-                transform: "translate(" + offset * 1.5 + "vw,0",
+                transform: "translate(" + coverSlide * 1.5 + "vw,0",
                 opacity: 100 - offset + "%",
               }}
             ></div>

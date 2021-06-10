@@ -4,6 +4,7 @@ import "../styles/home-pg1.css";
 import portrait1 from "../images/portrait1.jpg";
 import NavBar from "../components/navbar.jsx";
 
+
 const Home = () => {
   const [offset, setOffset] = useState(0);
 
@@ -12,6 +13,14 @@ const Home = () => {
       setOffset(window.pageYOffset);
     };
   }, []);
+
+  const trackScrolling = () => {
+    const wrappedElement = document.getElementById('header');
+    if (this.isBottom(wrappedElement)) {
+      console.log('header bottom reached');
+      document.removeEventListener('scroll', this.trackScrolling);
+    }
+  };
 
   console.log(window.pageYOffset);
 

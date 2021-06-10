@@ -21,7 +21,8 @@
   overflow: hidden;
   z-index: 2;
   left: 30%;
-  top: 20vh
+  top: 20vh;
+  align-items: flex-start;
 }
 
 .home-pg1-portrait-img {

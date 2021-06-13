@@ -7,7 +7,6 @@ import "../styles/page2.css";
 
 import Page2Up from "../components/page2_up.jsx";
 import Cover from "../components/cover.jsx";
-import bg from "../images/bg.jpg";
 
 const Home = () => {
   gsap.registerPlugin(ScrollTrigger);

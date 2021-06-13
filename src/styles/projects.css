@@ -1,0 +1,29 @@
+.projects-container{
+    margin-left: 12vw;
+    margin-right: 12vw;
+    margin-top: 5vh;
+}
+
+.projects-title{
+    /* top: 80vh; */
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1.1rem;
+    text-align: center;
+}
+
+.projects-inner-container{
+    margin-top: 5vh;
+}
+
+.p-btn{
+    margin-right: 2rem;
+}
+
+
+.card{
+    margin: 2vw;
+}
+.card:hover{
+    cursor: pointer;
+    
+}

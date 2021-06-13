@@ -1,6 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import NavBar from "../components/navbar.jsx";
-import portrait1 from "../images/portrait1.jpg";
+import portrait1 from "../images/portrait1.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Cover = () => {
@@ -20,13 +19,13 @@ const Cover = () => {
       {/* <h1 className="animate__animated animate__slideOutLeft">
           An animated element
         </h1> */}
-      <NavBar />
+      
       <div className="home-pg1">
         <div className="home-pg1-anime">
           <div
             className="home-pg1-left"
             style={{
-              transform: "translate(-" + offset * 1 + "vw,0",
+              transform: "translate(" + offset * 1 + "vw, 0px",
               opacity: 100 - offset * 1.5 + "%",
             }}
           >
@@ -63,7 +62,6 @@ const Cover = () => {
                   onClick={() =>
                     window.open("https://www.instagram.com/abigail_ouo/")
                   }
-                  // onclick="location.href='https://www.instagram.com/abigail_ouo/';"
                 />
               </div>
             </div>
@@ -71,7 +69,7 @@ const Cover = () => {
           <div
             className="home-pg1-portrait"
             style={{
-              transform: "translate(" + offset * 1.5 + "vw,0",
+              transform: "translate(" + offset * 1.5 + "vw, 0px",
               opacity: 100 - offset * 15 + "%",
             }}
           >
@@ -84,7 +82,7 @@ const Cover = () => {
           <div
             className="home-pg1-right"
             style={{
-              transform: "translate(" + offset * 1.5 + "vw,0",
+              transform: "translate(-" + offset * 1.5 + "vw, 0px",
               opacity: 100 - offset * 1.5 + "%",
             }}
           >

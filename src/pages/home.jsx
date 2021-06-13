@@ -1,52 +1,27 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import "../styles/home-pg1.css";
 import "../styles/page2.css";
 
-import Page2 from "../components/page2.jsx";
+import Page2Up from "../components/page2_up.jsx";
 import Cover from "../components/cover.jsx";
+import bg from "../images/bg.jpg";
 
 const Home = () => {
-    gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger);
 
-    const ref = useRef(null);
+  // const ref = useRef(null);
 
-    useEffect(() => {
-        const element = ref.current;
-        console.log(ref)
-        console.log(element.querySelector(".page2-container"));
-        gsap.fromTo(
-          element.querySelector(".page2-container"),
-          {
-            opacity: 0,
-            y: 0,
-          },
-          {
-            opacity:1,
-            y: -400,
-            scrollTrigger: {
-                trigger: element.querySelector(".page2-container"),
-                start: "top bottom-=5px",
-                end: "top bottom-=30px",
-                scrub: true,
-                // markers: true,
 
-              }
-          }
-        );
-        
-      }, []);
-
-    return (
-      <div ref={ref}>
-        <Cover /> 
-        <div className="page2-container" ><Page2/></div>
-        
-      </div>
-    );
-//   }
-}
+  return (
+    <div >
+      <Cover />
+      <Page2Up/>
+    </div>
+  );
+  //   }
+};
 
 export default Home;

@@ -28,14 +28,14 @@ class NavBar extends Component {
               <Nav className="me-auto">
                 <div className="list-group">
                   <a
-                    href="/"
+                    href="/s"
                     className="list-group-item list-group-item-action active"
                     aria-current="true"
                   >
-                    ABOUT ME
+                    HOME
                   </a>
                   <a
-                    href="/"
+                    href="/projects"
                     className="list-group-item list-group-item-action"
                   >
                     PROJECTS

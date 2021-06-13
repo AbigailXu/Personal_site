@@ -2,8 +2,7 @@
     position: relative;
     top: 100vh;
     /* background-color: aqua; */
-    z-index: -1;
-    padding-bottom: 50vh;
+    z-index: 4;
 }
 
 .p2-title{

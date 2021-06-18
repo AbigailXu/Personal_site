@@ -16,7 +16,7 @@ class Page2 extends Component {
                   className="p2-icon-2"
                   icon={["far", "user-circle"]}
                 />
-                <h5 className="p2-sub">ABOUT</h5>
+                <h5 className="p2-sub">ABOUT ME</h5>
               </a>
             </div>
             <div class="col col-lg-4 col-12">
@@ -25,7 +25,7 @@ class Page2 extends Component {
                   className="p2-icon-2"
                   icon={["fas", "project-diagram"]}
                 />
-                <h5 className="p2-sub">PROJECTS</h5>
+                <h5 className="p2-sub">MY PROJECTS</h5>
               </a>
             </div>
             <div class="col col-lg-4 col-12">
@@ -34,7 +34,7 @@ class Page2 extends Component {
                   className="p2-icon-2"
                   icon={["far", "comments"]}
                 />
-                <h5 className="p2-sub">CONTACT</h5>
+                <h5 className="p2-sub">CONTACT ME</h5>
               </a>
             </div>
           </div>

@@ -86,9 +86,9 @@ const Cover = () => {
               opacity: 100 - offset * 1.5 + "%",
             }}
           >
-            <div className="home-pg1-text-2">
+            {/* <div className="home-pg1-text-2">
               <h1>AX</h1>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

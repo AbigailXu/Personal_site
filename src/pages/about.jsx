@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import "../styles/about.css";
 
 import Education from '../components/education';
-// import Hobbies from '../components/hobbies';
+import Hobbies from '../components/hobbies';
 import Skill from "../components/skills";
 import Skill2 from "../components/skills2";
 
@@ -19,13 +19,13 @@ class Projects extends Component {
       {skill:"Backend", pack:"fas", name:"code-branch", dir:1},
       {skill:"Node.js", pack:"fab", name:"node-js", dir:2},
       {skill:"Express.js", pack:"fab", name:"node-js", dir:1},
-      {skill:"MongoDB", pack:"fas", name:"database", dir:2},
-      {skill:"Java", pack:"fab", name:"java", dir:1},
+      {skill:"Version Control", pack:"fab", name:"git", dir:1},
+      {skill:"Java", pack:"fab", name:"java", dir:2},
     ],
     skills2:[
-      {skill:"C-programming", img:"https://img.icons8.com/ios-filled/50/000000/c.png", dir:2},
-      {skill:"C++", img:"https://img.icons8.com/ios/70/000000/c-plus-plus-logo.png",dir:1},
-      {skill:"BASH", img:"https://img.icons8.com/carbon-copy/90/000000/console.png",dir:2}
+      {skill:"programming", img:"https://img.icons8.com/ios-filled/50/000000/c.png", dir:1},
+      {skill:"programming", img:"https://img.icons8.com/ios/70/000000/c-plus-plus-logo.png",dir:2},
+      {skill:"BASH", img:"https://img.icons8.com/carbon-copy/90/000000/console.png",dir:1}
     ]
   };
 
@@ -64,8 +64,8 @@ class Projects extends Component {
                   {/* <Skill/> */}
                 </div>
               </div>
-              {/* <h2 className="about-sub-title">Hobbies:</h2>
-                <Hobbies/> */}
+              <h2 className="about-sub-title">Hobbies:</h2>
+                <Hobbies/>
             </div>
           </div>
         </div>

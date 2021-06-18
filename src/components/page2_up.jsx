@@ -34,24 +34,24 @@ const Page2Up = () => {
         },
       },
     );
-    gsap.fromTo(
-      element.querySelector(".page2-container"),
-      {
-        opacity: 1,
-        // y: 0,
-      },
-      {
-        opacity: 0,
-        y: -500,
-        scrollTrigger: {
-          trigger: element.querySelector(".page2-container"),
-          start: "top bottom-=105px",
-          end: "top bottom-=130px",
-          scrub: true,
-          // markers: true,
-        },
-      },
-    );
+    // gsap.fromTo(
+    //   element.querySelector(".page2-container"),
+    //   {
+    //     opacity: 1,
+    //     // y: 0,
+    //   },
+    //   {
+    //     opacity: 0,
+    //     y: -500,
+    //     scrollTrigger: {
+    //       trigger: element.querySelector(".page2-container"),
+    //       start: "top bottom-=105px",
+    //       end: "top bottom-=130px",
+    //       scrub: true,
+    //       // markers: true,
+    //     },
+    //   },
+    // );
   }, []);
 
 

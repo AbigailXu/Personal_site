@@ -27,3 +27,10 @@
     cursor: pointer;
     
 }
+
+@media only screen and (max-width: 600px)  {
+    .about-project-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

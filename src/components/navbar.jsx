@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import { withRouter } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

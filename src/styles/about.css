@@ -1,6 +1,12 @@
 
+.overflow-wrapper{
+    overflow-x: hidden;
+}
+
 .about-container{
     margin-top: 10vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
 }
 
 .about-sub-title{
@@ -15,7 +21,6 @@
 
 .about-ls1, .about-ls2{
     text-indent: -2.9rem;
-    
     line-height: 2rem;
 }
 
@@ -24,6 +29,7 @@
     list-style-type: none;
     text-align: left;
     margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
 .point-icon{
@@ -50,11 +56,17 @@
 }
 
 .about-ls2{
-margin-top: 5vh;
-margin-bottom: 50vh;
+margin-top: 8vh;
+margin-bottom: 15vh;
 padding-left: 0 !important;
 }
 
 .skills{
     margin-top: 10vh;
+}
+
+@media only screen and (max-width: 600px)  {
+    .about-container{
+        margin-left: 0;
+    }
 }

@@ -41,8 +41,8 @@ class Projects extends Component {
     const p = this.state.Projects;
     console.log(p);
     return (
-      <div className="projects-container">
-        <h1 className="projects-title">PROJECTS & SNIPPETS</h1>
+      <div className="about-project-container">
+        <h1 className="about-project-title">PROJECTS & SNIPPETS</h1>
         <div className="projects-inner-container">
         <Row xs={1} md={2} className="g-4">
           {Array.from({ length: 4 }).map((_, idx) => (

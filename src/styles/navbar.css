@@ -1,31 +1,43 @@
-.navbar-container{
-    background-color: transparent !important;
-    z-index: 2;
-    margin: 1rem 2rem !important;
-    top: 2vh;
-    position: fixed;
+.navbar-container1 {
+  background-color: transparent !important;
+  z-index: 2;
+  margin: 1rem 1rem !important;
+  top: 1.2vh;
+  position: fixed;
+  font-size: larger;
 }
-.basic-navbar-nav:active{
-    border-style: none !important;
+.navbar-container2 {
+  background-color: transparent !important;
+  z-index: 2;
+  margin: 1rem 2rem !important;
+  top: 2vh;
+  left: 3vw;
+  position: fixed;
+}
+.basic-navbar-nav:active {
+  border-style: none !important;
 }
 .nav-icon {
-    color: #919da8;
+  color: #919da8;
+}
+
+.list-group {
+  max-width: 20vw;
+}
+.list-group-item {
+  background-color: transparent !important;
+  color: #919da8 !important;
+  border-style: none !important;
+  max-width: 15vw;
+  text-align: left !important;
+}
+
+@media only screen and (max-width: 600px)  {
+  .list-group-item {
+    max-width: 40vw;
   }
-
-.list-group{
-    max-width: 15vw;
-}
-.list-group-item{
-    background-color: transparent !important;
-    color: #919da8 !important;
-    border-style: none !important;
-    max-width: 15vw;
-    text-align: left !important;
-}
-
-@media (max-width: 450){
-    .list-group-item{
-        max-width: 40vw;
-    }
-
+  .navbar-container1 {
+    margin: 1rem 0rem !important;
+  }
+  
 }

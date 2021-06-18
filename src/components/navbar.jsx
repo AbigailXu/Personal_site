@@ -1,9 +1,6 @@
 import React, { Component, Fragment } from "react";
-import {
-  Navbar,
-  Nav,
-  Container,
-} from "react-bootstrap";
+import { withRouter } from "react-router-dom";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "../styles/navbar.css";
@@ -20,7 +17,19 @@ class NavBar extends Component {
           </div>
         </div>
         <Navbar bg="light" expand="">
-          <Container className="navbar-container">
+          <Container className="navbar-container1">
+            <Nav className="me-auto">
+              <a
+                href="/"
+                className="list-group-item list-group-item-action active"
+                aria-current="true"
+              >
+                <FontAwesomeIcon className="nav-icon" icon={["fas", "home"]} />
+              </a>
+            </Nav>
+          </Container>
+
+          <Container className="navbar-container2">
             <Navbar.Toggle aria-controls="basic-navbar-nav">
               <FontAwesomeIcon className="nav-icon" icon={["fas", "bars"]} />
             </Navbar.Toggle>
@@ -28,23 +37,23 @@ class NavBar extends Component {
               <Nav className="me-auto">
                 <div className="list-group">
                   <a
-                    href="/s"
+                    href="/"
                     className="list-group-item list-group-item-action active"
                     aria-current="true"
                   >
                     HOME
                   </a>
                   <a
+                    href="/about"
+                    className="list-group-item list-group-item-action"
+                  >
+                    ABOUT ME
+                  </a>
+                  <a
                     href="/projects"
                     className="list-group-item list-group-item-action"
                   >
                     PROJECTS
-                  </a>
-                  <a
-                    href="/"
-                    className="list-group-item list-group-item-action"
-                  >
-                    CONTACT
                   </a>
                   <a
                     href="/"

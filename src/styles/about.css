@@ -1,0 +1,60 @@
+
+.about-container{
+    margin-top: 10vh;
+}
+
+.about-sub-title{
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    margin-left: 4rem;
+}
+
+.about-sub-title2{
+    margin-left: 7rem !important;
+}
+
+.about-ls1, .about-ls2{
+    text-indent: -2.9rem;
+    
+    line-height: 2rem;
+}
+
+.about-ls1-item{
+    padding-left: 2em;
+    list-style-type: none;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.point-icon{
+    margin-right: 2rem;
+}
+
+.point-text-l1, .point-text-l2, .point-text-l3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+}
+
+.point-text-l2{
+    margin-left: 3rem;
+    margin-top: 0.3rem;
+}
+
+.point-text-l3{
+    margin-left: 9rem;
+}
+
+.uw-icon{
+    margin: 3vw;
+    max-width: 25vw;
+}
+
+.about-ls2{
+margin-top: 5vh;
+margin-bottom: 50vh;
+padding-left: 0 !important;
+}
+
+.skills{
+    margin-top: 10vh;
+}

@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import "../styles/about.css";
 
 import Education from '../components/education';
-import Hobbies from '../components/hobbies';
+// import Hobbies from '../components/hobbies';
 import Skill from "../components/skills";
 import Skill2 from "../components/skills2";
 
@@ -64,8 +64,8 @@ class Projects extends Component {
                   {/* <Skill/> */}
                 </div>
               </div>
-              <h2 className="about-sub-title">Hobbies:</h2>
-                <Hobbies/>
+              {/* <h2 className="about-sub-title">Hobbies:</h2>
+                <Hobbies/> */}
             </div>
           </div>
         </div>

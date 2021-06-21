@@ -29,8 +29,8 @@
   max-height: 86vh;
   /* border-radius: 50%; */
   border-width: 20px;
-  border-color: #FAF8FC;
-  background-color: #FAF8FC;
+  border-color: #faf9f8;
+  background-color: #faf9f8;
   border-style: solid;
   box-shadow: 2px 2px 30px rgba(0, 0,0, 0.3);
 }
@@ -38,7 +38,7 @@
 .home-pg1-right {
   height: 110vh;
   width: 35vw;
-  background: #FAF8FC;
+  background: #faf9f8;
 /* background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(223, 224, 225) 87%, rgb(205, 205, 207) 100%); */
   z-index: 1;
   float: right;
@@ -46,7 +46,7 @@
 .home-pg1-text-1 {
   margin-top: 40vh;
   margin-right: 35%;
-  color: #E1DFE0;
+  color: #faf9f8;
   text-align: right;
 }
 .home-pg1-text-2 {

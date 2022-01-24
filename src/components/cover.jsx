@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import portrait1 from "../images/portrait1.jpeg";
+import portrait1 from "../images/portrait1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Cover = () => {

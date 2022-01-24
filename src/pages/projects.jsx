@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../styles/projects.css";
 import { Row, Col, Card } from "react-bootstrap";
 
+import EmpowerChange from "../images/empowerchange_mockup.png";
 import Studier_s from "../images/Studier-s.png";
 import LCT from "../images/LCT.png";
 import Currency from "../images/currency.png";
@@ -11,9 +12,15 @@ class Projects extends Component {
   state = {
     Projects: [
       {
+        name: "EmpowerChange (web app)",
+        img: EmpowerChange,
+        text: "The full-stack web application of non-profit mental health corporation EmpowerChange. Supports volunteer-applicant matching, consulting session booking, and user login. Developed with 3 other volunteers.",
+        url:"https://ring-bell-front-end-aoxzdekod-dannyboy1024.vercel.app/"
+      },
+      {
         name: "Studier's (web app)",
         img: Studier_s,
-        text: "A dynamic, full-stack web application using: HTML, CSS, JavaScript, React.js, Bootstrap, Node.js, Express.js, MongoDB. Provides an integrated learning-toolbox that allows students to managing tasks and play study",
+        text: "A full-stack web application using: HTML, CSS, JavaScript, React.js, Bootstrap, Node.js, Express.js, MongoDB. Provides an integrated learning-toolbox that allows students to managing tasks and play study",
         url:"https://studier-s.netlify.app/"
       },
       {
@@ -42,10 +49,10 @@ class Projects extends Component {
     console.log(p);
     return (
       <div className="about-project-container">
-        <h1 className="about-project-title">PROJECTS & SNIPPETS</h1>
+        <h1 className="about-project-title">PROJECTS</h1>
         <div className="projects-inner-container">
         <Row xs={1} md={2} className="g-4">
-          {Array.from({ length: 4 }).map((_, idx) => (
+          {Array.from({ length: this.state.Projects.length }).map((_, idx) => (
             <Col>
               <Card className="card" onClick={() =>
                     window.open(p[idx].url)

@@ -1,28 +1,14 @@
 .box{
     margin: 3vh 0;
-    /* background-color: rgb(198, 219, 228); */
     overflow: hidden;
     height: 12vh;
     font-size: 1.5rem;
     width: 80vw;
-    /* box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3); */
-    /* border-color: black;
-    border-radius: 2rem;
-    border-style: solid; */
     margin-left: auto !important;
     margin-right: auto !important;
     vertical-align: middle;
 }
-/* .skill-circle{
-    margin-top: 1vh;
-    margin-left: 3vh;
-    float: left;
-    border-color: black;
-    border-radius: 100%;
-    border-style: solid;
-    height: 3rem;
-    width: 3rem;
-} */
+
 .skill-content{
     padding-top: 1vh !important;
     display: inline;
@@ -33,31 +19,5 @@
     margin-right: 1rem;
     font-size: 4rem;
 }
-
-
-/* .stack{
-    /* margin-top: -10vh; */
-    /* position: relative !important; */
-/* }  */
-
-/* 
-#oval {
-    display: flex;
-    z-index: 3 !important;
-    width: 400px;
-    height: 100px;
-    background: red;
-    border-radius: 400px / 100px;
-  }
-
-  #box{
-    z-index: 1 !important;
-    width: 400px;
-    height: 70px;
-    background: red;
-    border-radius: 0;
-    margin-top: -7vh;
-  } */
-
 
 

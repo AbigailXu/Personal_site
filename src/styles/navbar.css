@@ -38,6 +38,11 @@
   }
   .navbar-container1 {
     margin: 1rem 0rem !important;
+    left: 12vw;
+  }
+
+  .navbar-container2 {
+    margin: 1rem 0rem !important;
   }
   
 }

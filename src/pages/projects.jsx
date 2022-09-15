@@ -15,7 +15,7 @@ class Projects extends Component {
         name: "EmpowerChange (web app)",
         img: EmpowerChange,
         text: "The full-stack web application of non-profit mental health corporation EmpowerChange. Supports volunteer-applicant matching, consulting session booking, and user login. Developed with 3 other volunteers.",
-        url:"https://ring-bell-front-end-aoxzdekod-dannyboy1024.vercel.app/"
+        url:"https://empowerchangeglobal.com/"
       },
       {
         name: "Studier's (web app)",

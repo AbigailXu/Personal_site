@@ -10,18 +10,19 @@ import Skill2 from '../components/skills2'
 class Projects extends Component {
   state = {
     skills: [
+      { skill: 'Java', pack: 'fab', name: 'java', dir: 1 },
+      { skill: 'JavaScript', pack: 'fab', name: 'js-square', dir: 2 },
+      { skill: 'Spring Boot', pack: 'fab', name: 'java', dir: 1 },
+      { skill: 'React.js', pack: 'fab', name: 'react', dir: 2 },
+      { skill: 'Node.js / Express.js', pack: 'fab', name: 'node-js', dir: 1 },
+      { skill: 'HTML / CSS', pack: 'fas', name: 'file-code', dir: 2 },
+      { skill: 'SQL', pack: 'fas', name: 'database', dir: 1 },
       {
         skill: 'Frontend / Backend',
         pack: 'fas',
         name: 'window-restore',
-        dir: 1,
+        dir: 2,
       },
-      { skill: 'JavaScript', pack: 'fab', name: 'js-square', dir: 2 },
-      { skill: 'React.js', pack: 'fab', name: 'react', dir: 1 },
-      { skill: 'Node.js / Express.js', pack: 'fab', name: 'node-js', dir: 2 },
-      { skill: 'HTML / CSS', pack: 'fas', name: 'file-code', dir: 2 },
-      { skill: 'Java', pack: 'fab', name: 'java', dir: 2 },
-      { skill: 'SQL', pack: 'fas', name: 'database', dir: 1 },
     ],
     skills2: [
       {

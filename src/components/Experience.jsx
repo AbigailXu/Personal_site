@@ -4,6 +4,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 import SW from '../images/shareworks-by-morgan-stanley.png'
+import Loblaw from '../images/Loblaw Companies Limited.png'
 
 const study = [
   'Algorithm Design',
@@ -19,6 +20,29 @@ const Experience = () => {
   })
   return (
     <Fragment>
+       <div class="col col-lg-6 col-12" data-aos={'slide-right'}>
+        <img className="sw-icon" src={Loblaw} alt="sw icon" />
+      </div>
+      <div className="col col-lg-6 col-12">
+        <div className="about-ls1" data-aos={'slide-left'}>
+          <br></br>
+          <ul>
+            <li className="about-ls1-item">
+              <div className="point-text-l2">
+                <b>Software Engineer</b>
+              </div>
+              <div className="point-text-l2">
+              5/2022 - 8/2022 (coop)
+              </div>
+              <div className="point-text-l2">
+                Loblaw Companies Limited
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+  
+
       <div class="col col-lg-6 col-12" data-aos={'slide-right'}>
         <img className="sw-icon" src={SW} alt="sw icon" />
       </div>
@@ -40,6 +64,7 @@ const Experience = () => {
           </ul>
         </div>
       </div>
+      
     </Fragment>
   )
 }

@@ -1,0 +1,18 @@
+.nav{
+margin-top: 4vh;
+z-index: 10 !important;
+position: relative;
+}
+
+.nav-brand{
+  margin-right: -10vw !important;
+}
+
+.nav-links{
+  font-size: 1.1rem;
+  margin-left: 15%;
+}
+
+.nav-link{
+  padding-right: 4vw !important;
+}

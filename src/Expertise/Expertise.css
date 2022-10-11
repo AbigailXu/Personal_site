@@ -1,0 +1,36 @@
+#expertise{
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#expertise-title{
+    color: aliceblue;
+    font-size: 3.5rem;
+    margin-bottom: 5.5rem;
+}
+
+.expertise-card{
+    background-color: rgba(255, 255, 255, 0) !important;
+    margin: 0.5rem;
+    text-align: left;
+}
+
+.expertise-cardtitle{
+    color: aliceblue;
+    font-size: 1.4rem !important;
+}
+
+.expertise-cardtext{
+    color: aliceblue;
+}
+
+.expertise-icon{
+    text-align: left;
+    font-size: 2rem;
+    color: aliceblue;
+    margin-top: 0.5rem;
+    margin-bottom: -0.5rem;
+    margin-left: -0.4rem;
+
+}

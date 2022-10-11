@@ -1,0 +1,29 @@
+#header{
+    /* position: relative; */
+}
+#header-text-group{
+    color: aliceblue;
+    z-index: 10 !important;
+    position: relative;
+    margin-top: 16vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:-510px;
+}
+
+#header-name{
+    font-size: 6rem;
+    margin-bottom: 2.7rem;
+}
+
+#header-intro{
+    
+}
+
+#header-img{
+    width: 114.5vw;
+    height: 57.5vw;
+    margin-left: 30vw;
+    opacity: 0.7;
+}
+

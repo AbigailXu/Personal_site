@@ -2,11 +2,9 @@ import React, { Component, Fragment } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import "../styles/navbar.css";
+import "./NavBar.css";
 
-class NavBar extends Component {
-  state = {};
-  render() {
+function NavBar() {
     return (
       <Fragment>
         <div className="collapse" id="navbarToggleExternalContent">
@@ -60,7 +58,7 @@ class NavBar extends Component {
         </Navbar>
       </Fragment>
     );
-  }
+  
 }
 
 export default NavBar;

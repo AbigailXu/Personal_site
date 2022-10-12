@@ -132,4 +132,9 @@
   .experience-date {
     text-align: left;
   }
+  .experience-img {
+    width: 50vw;
+    margin-left: -3vw !important;
+    margin-bottom: 1rem !important;
+  }
 }

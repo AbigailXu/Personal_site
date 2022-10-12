@@ -83,7 +83,16 @@
     font-size: 5.4rem;
   }
   #project-featureimg {
-    width: 77vw;
+    width: 1vw;
     margin-bottom: 3rem !important;
+    position: absolute;
+    visibility: collapse;
   }
+  #project-featuretext {
+    width: 1vw;
+    position: absolute;
+    visibility: collapse;
+  }
+
+
 }

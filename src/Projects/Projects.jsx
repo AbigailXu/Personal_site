@@ -67,12 +67,12 @@ function Projects() {
   return (
     <div id="project">
       <Container>
-        <Row>
+        <Row >
           <Col sm="4">
             <h2 id="project-title">My Projects</h2>
             <p id="project-featuretext">{projectsList[0].text}</p>
           </Col>
-          <Col>
+          <Col >
             <img
               id="project-featureimg"
               src={projectsList[0].img}

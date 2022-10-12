@@ -8,7 +8,7 @@ let expertiseList = [
   {
     title: 'Software Dev, Deep Learning',
     body:
-      'Skilled in both functional and OOP. Experienced in: data structures, deep learning, dynamic programing, operating system.',
+      'Skilled in both functional programing and OOP. Experienced in: data structures, deep learning, dynamic programing, operating system, and more.',
     skills: ['Bash', 'C', 'C++', 'Java', 'Python', 'OOP', 'R'],
     icon: ['fas', 'desktop'],
   },
@@ -16,14 +16,14 @@ let expertiseList = [
     title: 'Frontend Development',
     body:
       '3+ years of experience in cross-platform UI/UX design and development.',
-    skills: ['Bootstrap', 'CSS', 'HTML', 'C++', 'JavaScript', 'TypeScript', 'Kotlin', 'React.js'],
+    skills: ['Bootstrap', 'CSS', 'HTML', 'JavaScript', 'TypeScript', 'Kotlin', 'React.js'],
     icon: ['fab', 'react'],
   },
   {
     title: 'Backend Development',
     body:
-      'Proficient backend development, 3+ years of experience in Spring Boot and JS-based backend development.',
-    skills: ['Express.js', 'Go','GWT', 'Java', 'MongoDB', 'Node.js', 'Spring Boot', 'SQL'],
+      '3+ years of experience in Spring Boot service and JS-based backend development.',
+    skills: ['Express.js', 'Go','GWT', 'Java', 'MongoDB', 'Node.js', 'RESTful API', 'Spring Boot', 'SQL'],
     icon: ['fas', 'network-wired'],
   },
 ]

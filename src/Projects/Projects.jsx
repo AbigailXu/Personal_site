@@ -17,7 +17,15 @@ let projectsList = [
     text:
       'The full-stack web application of non-profit mental health corporation EmpowerChange. Supports volunteer-applicant matching, consulting session booking, and user login. Developed with 3 other volunteers.',
     url: 'https://empowerchangeglobal.com/',
-    type: "web"
+    type: 'web',
+  },
+  {
+    name: 'EmpowerChange (web app)',
+    img: EmpowerChange,
+    text:
+      'The full-stack web application of non-profit mental health corporation EmpowerChange. Supports volunteer-applicant matching, consulting session booking, and user login. Developed with 3 other volunteers.',
+    url: 'https://empowerchangeglobal.com/',
+    type: 'web',
   },
   {
     name: "Studier's (web app)",
@@ -25,7 +33,7 @@ let projectsList = [
     text:
       'A full-stack web application using: HTML, CSS, JavaScript, React.js, Bootstrap, Node.js, Express.js, MongoDB. Provides an integrated learning-toolbox that allows students to managing tasks and play study',
     url: 'https://studier-s.netlify.app/',
-    type: "web"
+    type: 'web',
   },
   {
     name: 'Linear Congruence Solver (Java program)',
@@ -33,7 +41,7 @@ let projectsList = [
     text:
       'A program developed using Java and NetBeans IDE for solving linear congruence problems and generating detailed and intuitive calculation processes.',
     url: 'https://github.com/AbigailXu/Linear-Congruence-Solver',
-    type: "other"
+    type: 'other',
   },
   {
     name: 'Currency Converter (Chrome extension)',
@@ -41,7 +49,7 @@ let projectsList = [
     text:
       'Automatically convert the currency on websites to the currency set by the user. Project for Hacks the North 2021, developed with 2 team members',
     url: 'https://github.com/hzhou0/currency_converter',
-    type: "other"
+    type: 'other',
   },
   {
     name: 'Stars-pedia (website)',
@@ -49,7 +57,7 @@ let projectsList = [
     text:
       'An astronomy-based educational website using HTML, CSS, JavaScript. Project for Ignition Hacks 2020, developed with 3 team members.',
     url: 'https://github.com/lxl011212/Stars-pedia',
-    type: "web"
+    type: 'web',
   },
 ]
 
@@ -75,13 +83,45 @@ function Projects() {
         <Row>
           <h5 id="project-filter">
             Filter by: &nbsp;&nbsp;
-            <span className="project-filteritem" onClick={() => setDisplayList(projectsList.slice(1))}>All</span>{' '}
+            <span
+              className="project-filteritem"
+              onClick={() => setDisplayList(projectsList.slice(1))}
+            >
+              All
+            </span>{' '}
             &nbsp;&nbsp;/&nbsp;&nbsp;
-            <span className="project-filteritem" onClick={() => setDisplayList(projectsList.slice(1).filter(it=>(it.type==="ai")))}>Deep Learning</span>{' '}
+            <span
+              className="project-filteritem"
+              onClick={() =>
+                setDisplayList(
+                  projectsList.slice(1).filter((it) => it.type === 'ai'),
+                )
+              }
+            >
+              Deep Learning
+            </span>{' '}
             &nbsp;&nbsp;/&nbsp;&nbsp;
-            <span className="project-filteritem" onClick={() => setDisplayList(projectsList.slice(1).filter(it=>(it.type==="web")))}>Web Development</span>{' '}
+            <span
+              className="project-filteritem"
+              onClick={() =>
+                setDisplayList(
+                  projectsList.slice(1).filter((it) => it.type === 'web'),
+                )
+              }
+            >
+              Web Development
+            </span>{' '}
             &nbsp;&nbsp;/&nbsp;&nbsp;
-            <span className="project-filteritem" onClick={() => setDisplayList(projectsList.slice(1).filter(it=>(it.type==="other")))}>Others</span>
+            <span
+              className="project-filteritem"
+              onClick={() =>
+                setDisplayList(
+                  projectsList.slice(1).filter((it) => it.type === 'other'),
+                )
+              }
+            >
+              Others
+            </span>
           </h5>
         </Row>
       </Container>
@@ -96,11 +136,19 @@ function Projects() {
 function renderCard(p) {
   return (
     <Col sm="4">
-      <Card className="project-card">
+      <Card
+        className="project-card"
+        onClick={() => window.open(p.url)}
+      >
         <Card.Header className="project-cardhead">
-            <Card.Img className="project-cardimg" variant="top" src={p.img} alt={p.img} />
+          <Card.Img
+            className="project-cardimg"
+            variant="top"
+            src={p.img}
+            alt={p.img}
+          />
         </Card.Header>
-        
+
         <Card.Body>
           <Card.Title className="project-cardtitle">
             <strong>{p.name}</strong>

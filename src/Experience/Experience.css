@@ -1,13 +1,135 @@
-#experience{
-    margin-top: 20rem;
-    width: 70vw;
-    margin-left: auto;
-    margin-right: auto;
+#experience {
+  margin-top: 20rem;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#experience-title{
-    color: aliceblue;
-    font-size: 3.5rem;
-    margin-bottom: 5.5rem;
+#experience-maintitle {
+  color: aliceblue;
+  font-size: 5.5rem;
+  margin-bottom: 7rem;
+  text-align: left;
+  /* margin-right: 2rem; */
+  /* margin-left: -10rem; */
+  position: relative;
+  z-index: 2;
+}
+
+#experience-maintitle > span {
+  color: rgb(75, 20, 134);
+}
+.experience-type {
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: right;
+  margin-right: 2rem;
+}
+
+.experience-accordion {
+  margin-bottom: 2rem !important;
+}
+
+.experience-card {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0.5rem;
+  background-color: black !important;
+  padding: 0 !important;
+}
+
+.experience-card:hover {
+  cursor: pointer;
+}
+
+.experience-onecontainer {
+  margin: 0 !important;
+  padding: 0.7em 1em !important;
+
+  background-color: rgb(75, 20, 134) !important;
+  border-radius: 10px;
+  /* margin-bottom: 1rem !important; */
+}
+
+.experience-onecontainer:hover {
+  background-color: rgb(100, 42, 162) !important;
+}
+
+.experience-title {
+  text-align: left;
+  color: aliceblue !important;
+}
+
+.experience-date {
+  text-align: right;
+  color: aliceblue !important;
+}
+
+.experience-plus {
+  color: aliceblue !important;
+}
+
+.experience-inst {
+  color: rgb(143, 143, 143);
+  font-style: italic;
+}
+
+.experience-decor {
+  position: absolute;
+  height: 60vw;
+  width: 80vw;
+  margin-top: -20vw;
+  margin-left: -20vw;
+  z-index: 0;
+  opacity: 10%;
+}
+
+.experience-body {
+  background-color: rgb(37, 29, 65) !important;
+  border-radius: 10px;
+  color: aliceblue;
+  text-align: left;
+}
+
+.card-header {
+  padding: 0 !important;
+}
+
+.experience-img {
+  width: 11.5vw;
+  margin-right: -1.8vw !important;
+  margin-top: 1rem !important;
+}
+
+.experience-text {
+  margin-bottom: 0.5rem !important;
+}
+
+.experience-skill {
+  background-color: rgb(45, 53, 152, 0.8);
+  border-radius: 50px !important;
+  padding: 0.5rem 0.7rem !important;
+  color: rgb(143, 143, 143) !important;
+  left: -8px !important;
+  width: auto !important;
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  #experience {
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #experience-maintitle {
+    font-size: 5.4rem;
+  }
+  .experience-type {
+    font-size: 1.6rem;
     text-align: left;
+    margin-bottom: 1rem;
+  }
+  .experience-date {
+    text-align: left;
+  }
 }

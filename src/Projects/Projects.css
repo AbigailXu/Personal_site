@@ -1,74 +1,89 @@
-#project{
-    width: 85vw;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25rem;
-    overflow-y: hidden !important;
+#project {
+  width: 85vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25rem;
+  overflow-y: hidden !important;
 }
 
-#project-title{
-    color: aliceblue;
-    font-size: 7rem;
-    text-align: left;
-    margin-bottom: 2rem;
+#project-title {
+  color: aliceblue;
+  font-size: 7rem;
+  text-align: left;
+  margin-bottom: 2rem;
 }
 
-#project-featuretext{
-    color: aliceblue;
-    text-align: left;
-    margin-bottom: 5.5rem;
+#project-featuretext {
+  color: aliceblue;
+  text-align: left;
+  margin-bottom: 5.5rem;
 }
 
-#project-featureimg{
-    width: 40rem;
+#project-featureimg {
+  width: 40rem;
 }
 
-#project-filter{
-    color: rgb(133, 133, 133);
-    text-align: left;
-    margin-bottom: 2.5rem;
+#project-filter {
+  color: rgb(133, 133, 133);
+  text-align: left;
+  margin-bottom: 2.5rem;
 }
 
-#project-cardcontainer{
-    margin: -0.5rem;
-    min-height: 60vh !important;
+#project-cardcontainer {
+  margin: -0.5rem;
+  min-height: 60vh !important;
 }
 
-
-.project-card{
-    background-color: rgb(21, 24, 30, 0.9) !important;
-    margin: 0.5rem;
-    margin-bottom: 1.2rem;
-    text-align: left;
+.project-card {
+  background-color: rgb(21, 24, 30, 0.9) !important;
+  margin: 0.5rem;
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+.project-card:hover {
+  cursor: pointer;
 }
 
-.project-cardtitle{
-    color: aliceblue;
-    font-size: 1.4rem !important;
+.project-cardtitle {
+  color: aliceblue;
+  font-size: 1.4rem !important;
 }
 
-.project-cardtext{
-    color: aliceblue;
+.project-cardtext {
+  color: aliceblue;
 }
 
-.project-cardhead{
-    overflow:hidden;
-    padding: 0 !important;
+.project-cardhead {
+  overflow: hidden;
+  padding: 0 !important;
 }
 
-.project-cardimg{
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+.project-cardimg {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-.project-cardimg:hover{
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+.project-cardimg:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-.project-filteritem:hover{
-    color: rgb(138, 117, 255);
-    cursor: pointer;
+.project-filteritem:hover {
+  color: rgb(138, 117, 255);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  #project {
+    margin-top: 15rem;
+  }
+  #project-title {
+    font-size: 5.4rem;
+  }
+  #project-featureimg {
+    width: 77vw;
+    margin-bottom: 3rem !important;
+  }
 }

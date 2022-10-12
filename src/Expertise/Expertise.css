@@ -1,36 +1,49 @@
-#expertise{
-    width: 70vw;
-    margin-left: auto;
-    margin-right: auto;
+#expertise {
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#expertise-title{
-    color: aliceblue;
-    font-size: 3.5rem;
-    margin-bottom: 5.5rem;
+#expertise-title {
+  color: aliceblue;
+  font-size: 3.5rem;
+  margin-bottom: 5.5rem;
 }
 
-.expertise-card{
-    background-color: rgba(255, 255, 255, 0) !important;
-    margin: 0.5rem;
-    text-align: left;
+.expertise-card {
+  background-color: rgba(255, 255, 255, 0) !important;
+  margin: 0.5rem;
+  text-align: left;
+  min-height: 22rem !important;
 }
 
-.expertise-cardtitle{
-    color: aliceblue;
-    font-size: 1.4rem !important;
+.expertise-cardtitle {
+  color: aliceblue;
+  font-size: 1.43rem !important;
+  margin-top: 0.8rem !important;
+  margin-bottom: 1.5rem !important;
 }
 
-.expertise-cardtext{
-    color: aliceblue;
+.expertise-cardtext {
+  color: aliceblue;
 }
 
-.expertise-icon{
-    text-align: left;
-    font-size: 2rem;
-    color: aliceblue;
-    margin-top: 0.5rem;
-    margin-bottom: -0.5rem;
-    margin-left: -0.4rem;
+.expertise-icon {
+  text-align: left;
+  font-size: 2rem;
+  color: aliceblue;
+  margin-top: 1.5rem !important;
+  margin-bottom: -0.5rem;
+  margin-left: -0.4rem;
+}
 
+.expertise-skill {
+  border-style: solid;
+  border-color: rgb(45, 53, 152, 0.8) !important;
+  margin: 0.2rem !important;
+  padding: 0.5rem 0.7rem !important;
+  color: rgb(143, 143, 143) !important;
+  left: -8px !important;
+  width: auto !important;
+  position: relative;
 }

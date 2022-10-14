@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import './Projects.css'
 
+import Fib from '../images/fib.png'
 import EmpowerChange from '../images/empowerchange_mockup.png'
 import Studier_s from '../images/Studier-s.png'
 import LCT from '../images/LCT.png'
@@ -26,6 +27,14 @@ let projectsList = [
       'The full-stack web application of non-profit mental health corporation EmpowerChange. Supports volunteer-applicant matching, consulting session booking, and user login. Developed with 3 other volunteers.',
     url: 'https://empowerchangeglobal.com/',
     type: 'web',
+  },
+  {
+    name: 'Fibonacci Number API',
+    img: Fib,
+    text:
+      'An API that uses dynamic programming algorithm to calculate Fibonacci number with high efficiency. Built with Go and deployed with AWS.',
+    url: 'https://github.com/AbigailXu/Fibonacci-Number-API-',
+    type: 'other',
   },
   {
     name: "Studier's (web app)",
@@ -67,12 +76,12 @@ function Projects() {
   return (
     <div id="project">
       <Container>
-        <Row >
+        <Row>
           <Col sm="4">
             <h2 id="project-title">My Projects</h2>
             <p id="project-featuretext">{projectsList[0].text}</p>
           </Col>
-          <Col >
+          <Col>
             <img
               id="project-featureimg"
               src={projectsList[0].img}
@@ -136,10 +145,7 @@ function Projects() {
 function renderCard(p) {
   return (
     <Col sm="4">
-      <Card
-        className="project-card"
-        onClick={() => window.open(p.url)}
-      >
+      <Card className="project-card" onClick={() => window.open(p.url)}>
         <Card.Header className="project-cardhead">
           <Card.Img
             className="project-cardimg"

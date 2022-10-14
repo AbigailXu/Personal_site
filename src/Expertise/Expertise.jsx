@@ -23,7 +23,7 @@ let expertiseList = [
     title: 'Backend Development',
     body:
       '3+ years of experience in Spring Boot service and JS-based backend development.',
-    skills: ['Express.js', 'Go','GWT', 'Java', 'MongoDB', 'Node.js', 'RESTful API', 'Spring Boot', 'SQL'],
+    skills: ['AWS', 'Docker', 'Express.js', 'Go','GWT', 'Java', 'MongoDB', 'Node.js', 'RESTful API', 'Spring Boot', 'SQL'],
     icon: ['fas', 'network-wired'],
   },
 ]

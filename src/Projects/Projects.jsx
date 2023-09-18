@@ -10,6 +10,8 @@ import Studier_s from '../images/Studier-s.png'
 import LCT from '../images/LCT.png'
 import Currency from '../images/currency.png'
 import Star from '../images/star.png'
+import WLP4Compiler from '../images/WLP4Compiler.png'
+import DecisionTree from '../images/DecisionTree.png'
 
 let projectsList = [
   {
@@ -29,6 +31,14 @@ let projectsList = [
     type: 'web',
   },
   {
+    name: 'Basic Decision Tree Learning',
+    img: DecisionTree,
+    text:
+      'Developed a decision tree learning model. Implementing NumPy, SciPy. Testing accuracy up to 0.83.',
+    url: 'https://colab.research.google.com/drive/1Cw1lcznG-U_WGssd-VW43HrvEw210hRE?usp=sharing',
+    type: 'ai',
+  },
+  {
     name: 'Fibonacci Number API',
     img: Fib,
     text:
@@ -43,6 +53,14 @@ let projectsList = [
       'A full-stack web application using: HTML, CSS, JavaScript, React.js, Bootstrap, Node.js, Express.js, MongoDB. Provides an integrated learning-toolbox that allows students to managing tasks and play study',
     url: 'https://studier-s.netlify.app/',
     type: 'web',
+  },
+  {
+    name: 'WLP4 Compiler',
+    img: WLP4Compiler,
+    text:
+      'A compiler for WLP4 (a subset of C) programs, developed using C++, implements OOP design.',
+    url: 'https://github.com/AbigailXu/WLP4-Compiler',
+    type: 'other',
   },
   {
     name: 'Linear Congruence Solver (Java program)',

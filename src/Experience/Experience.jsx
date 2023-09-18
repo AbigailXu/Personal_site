@@ -6,10 +6,18 @@ import './Experience.css'
 import SW from '../images/shareworks-by-morgan-stanley.png'
 import Loblaw from '../images/Loblaw Companies Limited.png'
 import UW from '../images/uw-icon.png'
-
+import FordPro from '../images/FordPro.jpg'
 
 let jobList = [
   {
+    title: 'Software Engineer',
+    institution: 'Ford Motor Company of Canada Limited - Ford Pro',
+    date: '1/2023 - 4/2023',
+    text:
+      'Developed and maintained a scalable, secure, highly responsive abstraction layer, using Java and GCP, enabling seamless API interaction between providers and consumers of Ford Pro’s sales solution.',
+    img: FordPro,
+    skills: ['Java', 'GCP', 'OpenApi', 'Datadog'],
+  },{
     title: 'Software Engineer',
     institution: 'Loblaw Companies Limited',
     date: '05/2022 - 08/2022',
@@ -115,7 +123,7 @@ function Experience() {
 function randerAccordion(exp) {
   return (
     <Card className="experience-card">
-      <Accordion.Toggle as={Card.Header} eventKey={exp.title}>
+      <Accordion.Toggle as={Card.Header} eventKey={exp.date}>
         <Container className="experience-onecontainer">
           <Row>
             <Col sm="8" className="experience-title">
@@ -131,7 +139,7 @@ function randerAccordion(exp) {
           </Row>
         </Container>
       </Accordion.Toggle>
-      <Accordion.Collapse className="experience-body" eventKey={exp.title}>
+      <Accordion.Collapse className="experience-body" eventKey={exp.date}>
         <Card.Body className="experience-body">
           <Container>
             <Row>

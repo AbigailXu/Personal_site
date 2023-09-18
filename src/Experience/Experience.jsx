@@ -12,7 +12,7 @@ let jobList = [
   {
     title: 'Software Engineer',
     institution: 'Ford Motor Company of Canada Limited - Ford Pro',
-    date: '1/2023 - 4/2023',
+    date: '01/2023 - 04/2023',
     text:
       'Developed and maintained a scalable, secure, highly responsive abstraction layer, using Java and GCP, enabling seamless API interaction between providers and consumers of Ford Pro’s sales solution.',
     img: FordPro,

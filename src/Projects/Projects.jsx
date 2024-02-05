@@ -12,26 +12,44 @@ import Currency from '../images/currency.png'
 import Star from '../images/star.png'
 import WLP4Compiler from '../images/WLP4Compiler.png'
 import DecisionTree from '../images/DecisionTree.png'
+import DscWeb from '../images/dsc-web.png'
+import LaneDetect from '../images/lane-detect.gif'
 
 let projectsList = [
   {
-    name: 'EmpowerChange (web app)',
-    img: EmpowerChange,
+    name: 'UW Data Science Club Website',
+    img: DscWeb,
     text:
-      'The full-stack web application of non-profit mental health corporation EmpowerChange. Supports volunteer-applicant matching, consulting session booking, and user login. Developed with 3 other volunteers.',
-    url: 'https://empowerchangeglobal.com/',
+      'Serving as the Web Development VP of University of Waterloo Data Science Club. Co-developed the official website.',
+    url: 'https://www.uwdatascience.ca/',
     type: 'web',
+  },
+  {
+    name: 'UW Data Science Club Website',
+    img: DscWeb,
+    text:
+      'Serving as the Web Development VP of University of Waterloo Data Science Club. Co-developed the official website.',
+    url: 'https://www.uwdatascience.ca/',
+    type: 'web',
+  },
+  {
+    name: 'Lane Detection with OpenCV',
+    img: LaneDetect,
+    text:
+      'Detect lane lines in images/videos using Python and OpenCV.',
+    url: 'https://github.com/AbigailXu/CarND-LaneLines-P1',
+    type: 'ai',
   },
   {
     name: 'EmpowerChange (web app)',
     img: EmpowerChange,
     text:
       'The full-stack web application of non-profit mental health corporation EmpowerChange. Supports volunteer-applicant matching, consulting session booking, and user login. Developed with 3 other volunteers.',
-    url: 'https://empowerchangeglobal.com/',
+    url: 'https://github.com/dannyboy1024/RingBell-WebDev',
     type: 'web',
   },
   {
-    name: 'Basic Decision Tree Learning',
+    name: 'Decision Tree Learning',
     img: DecisionTree,
     text:
       'Developed a decision tree learning model. Implementing NumPy, SciPy. Testing accuracy up to 0.83.',
@@ -78,14 +96,6 @@ let projectsList = [
     url: 'https://github.com/hzhou0/currency_converter',
     type: 'other',
   },
-  {
-    name: 'Stars-pedia (website)',
-    img: Star,
-    text:
-      'An astronomy-based educational website using HTML, CSS, JavaScript. Project for Ignition Hacks 2020, developed with 3 team members.',
-    url: 'https://github.com/lxl011212/Stars-pedia',
-    type: 'web',
-  },
 ]
 
 function Projects() {
@@ -125,7 +135,7 @@ function Projects() {
                 )
               }
             >
-              Deep Learning
+              Machine Learning
             </span>{' '}
             &nbsp;&nbsp;/&nbsp;&nbsp;
             <span
@@ -136,7 +146,7 @@ function Projects() {
                 )
               }
             >
-              Web Development
+              Full-stack
             </span>{' '}
             &nbsp;&nbsp;/&nbsp;&nbsp;
             <span

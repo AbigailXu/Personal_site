@@ -7,8 +7,18 @@ import SW from '../images/shareworks-by-morgan-stanley.png'
 import Loblaw from '../images/Loblaw Companies Limited.png'
 import UW from '../images/uw-icon.png'
 import FordPro from '../images/FordPro.jpg'
+import UKG from '../images/UKG.svg.png'
 
 let jobList = [
+  {
+    title: 'Software Engineer',
+    institution: 'UKG',
+    date: '09/2023 - 12/2023',
+    text:
+      'Modernized the WFM service and application service platform, fragmentized their monolithic architecture into Spring Boot microservices, reducing the build time by 92.5\%. Innovated a dependency-analysis tool with Python, transformed manual work into an automated solution, boosted workflow efficiency by >200%.',
+    img: UKG,
+    skills: ['Java', 'Spring Boot', 'Python', 'Jenkins', 'microservices'],
+  },
   {
     title: 'Software Engineer',
     institution: 'Ford Motor Company of Canada Limited - Ford Pro',
@@ -46,12 +56,12 @@ let jobList = [
 ]
 let educationList = [
   {
-    title: 'Bachelor of Computer Science',
+    title: 'Bachelor of Computer Science, AI Specialization',
     institution: 'University Of Waterloo',
     date: '09/2020 - 04/2025',
     text: 'Candidate of Bachelor of Computer Science, graduating in 2025    ',
     img: UW,
-    skills: ['Bash', 'C', 'C++', 'Kotlin', 'OOP', 'R'],
+    skills: ['ML', 'Python', 'C/C++', 'Kotlin','OS', 'R', 'Application Development' , 'Database Management', 'Data Structure and Algorithms', 'OOP'],
   },
 ]
 let certificatesList = [

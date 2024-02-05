@@ -6,24 +6,24 @@ import './Expertise.css'
 
 let expertiseList = [
   {
-    title: 'Software Dev, Deep Learning',
+    title: 'Machine Learning, SWE',
     body:
-      'Skilled in both functional programing and OOP. Experienced in: data structures, deep learning, dynamic programing, operating system, and more.',
-    skills: ['Bash', 'C', 'C++', 'Java', 'Python', 'OOP', 'R'],
+      'Skilled in both functional programing and OOP. Experienced in: machine learning, data structures, OS, and more.',
+    skills: [ 'Python',  'PyTorch', 'TensorFlow', 'Pandas', 'CNN', 'C/C++', 'Java','OOP', 'R', 'Bash'],
     icon: ['fas', 'desktop'],
   },
   {
     title: 'Frontend Development',
     body:
       '3+ years of experience in cross-platform UI/UX design and development.',
-    skills: ['Bootstrap', 'CSS', 'HTML', 'JavaScript', 'TypeScript', 'Kotlin', 'React.js'],
+    skills: ['Next.js', 'React.js', 'JavaScript', 'TypeScript', 'Kotlin', 'CSS', 'HTML', 'Bootstrap', 'Tailwind' ],
     icon: ['fab', 'react'],
   },
   {
     title: 'Backend Development',
     body:
       '3+ years of experience in Spring Boot service and JS-based backend development.',
-    skills: ['AWS', 'Docker', 'Express.js', 'Go','GWT', 'Java', 'MongoDB', 'Node.js', 'RESTful API', 'Spring Boot', 'SQL'],
+    skills: ['Java', 'Spring Boot', 'SQL', 'AWS', 'GCP', 'Go','MongoDB', 'Node','Express', 'RESTful API', 'Docker', 'Kubernetes','GWT'],
     icon: ['fas', 'network-wired'],
   },
 ]
